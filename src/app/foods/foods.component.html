@@ -1,0 +1,28 @@
+<div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon1">Keresés</span>
+    <input (keyup)="onKeyUp($event)" [(ngModel)]="keresoSzo" type="text" class="form-control" placeholder="Keresés">
+    
+  </div>
+  <button (click)="RendezesIranyValt()" type="button" class="btn btn-primary mb-3">{{rendezesTomb[rendezesAllapot]}}</button>
+ 
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+
+    <div *ngFor="let food of ((foods|search:keresoSzo)|sort:rendezesAllapot)" class="col">
+          <div class="card h-100">
+            <img [src]="food.kep" class="card-img-top" alt="ételkép">
+            <div class="card-body">
+              <h5 class="card-title">Élelmiszer</h5>
+              <p class="card-text">
+                {{food.leiras}}
+              </p>
+            </div>
+            <button class="btn btn-primary">Vásárlás</button>
+            <div class="card-footer">
+              <small class="text-muted">{{food.ar}}/{{food.mennyiseg}}</small>
+            
+                
+            
+        </div>
+    </div>
+</div>
