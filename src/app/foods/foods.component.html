@@ -9,6 +9,7 @@
 <div class="row row-cols-1 row-cols-md-3 g-4">
 
     <div *ngFor="let food of ((foods|search:keresoSzo)|sort:rendezesAllapot)" class="col">
+      
           <div class="card h-100">
             <img [src]="food.kep" class="card-img-top" alt="ételkép">
             <div class="card-body">

@@ -13,6 +13,8 @@ import { provideHttpClient } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { SearchPipe } from './search.pipe';
 import { SortPipe } from './sort.pipe';
+import { CartComponent } from './cart/cart.component';
+import { ShopComponent } from './shop/shop.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { SortPipe } from './sort.pipe';
     NavbarComponent,
     ErrorpageComponent,
     SearchPipe,
-    SortPipe
+    SortPipe,
+    CartComponent,
+    ShopComponent
   ],
   imports: [
     BrowserModule,

@@ -31,6 +31,7 @@ export class FoodsComponent {
 
   RendezesIranyValt(){
     this.rendezesAllapot=(this.rendezesAllapot==2?0:++this.rendezesAllapot)
-  }
+    if (this.rendezesAllapot==0) this.rendezesAllapot=1
+    }
 
 }
