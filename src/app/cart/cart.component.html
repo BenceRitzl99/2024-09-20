@@ -1,1 +1,9 @@
-<p>cart works!</p>
+<!-- {{kosar|json}} -->
+<div class="container">
+    <div *ngFor="let t of kosar" class="row">
+        <div class="col">{{t.nev}}</div>
+        <div class="col">{{t.db}} {{t.mennyiseg}} - {{price(t)}}</div>
+        
+    </div>
+<button (click)="leadas()" class="btn btn-outline-primary">Rendelés leadása</button>
+</div>

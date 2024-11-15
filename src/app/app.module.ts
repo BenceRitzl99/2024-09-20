@@ -15,6 +15,7 @@ import { SearchPipe } from './search.pipe';
 import { SortPipe } from './sort.pipe';
 import { CartComponent } from './cart/cart.component';
 import { ShopComponent } from './shop/shop.component';
+import { RendelesLeadasComponent } from './rendeles-leadas/rendeles-leadas.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ShopComponent } from './shop/shop.component';
     SearchPipe,
     SortPipe,
     CartComponent,
-    ShopComponent
+    ShopComponent,
+    RendelesLeadasComponent
   ],
   imports: [
     BrowserModule,
